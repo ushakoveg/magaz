@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: white;
+    color: #222;
+    font-weight: 300px;
+}
+.wrapper{
+    width: 1000px;
+    margin: 50px auto;
+}
+.add-to-cart:hover{
+transform: scale(1.2);
+}
+.logo{
+    font-weight: 600;
+    font-size: 20px;
+}
+.nav{
+    float: right;
+    list-style: none;
+}
+li{
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms;
+}
+li:hover{
+    opacity: 0.5;
+}
+.presentation{
+    margin: 50px 0;
+    background: url('../img/bg.jpg') no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #bcbcbc;
+    position: relative;
+}
+.presentation::after{
+    content:'лучшие сумочки от побрякушки' ;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+.presentation::before{
+    content:'по сладким ценам' ;
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+header{
+    position: relative;
+}
+.shop-cart-open{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 450px;
+    background: #fafafa;
+    z-index: 1000;
+    padding: 20px;
+    padding-bottom: 0;
+}
+main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.shop-cart{
+    float: right;
+    cursor: pointer;
+    transition: color, transform 500ms;
+}
+header .shop-cart-open .empty h2{
+    font-size: 20px;
+    margin: 20px;
+}
+.delete-icon {
+    color: red;
+    float: right;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+    transition: color, transform 500ms;
+}
+.delete-icon:hover{
+    color: rgb(244, 24, 24);
+    transform: scale(1.5);
+}
+header .shop-cart-open .item{
+width: 100%;
+float: left;
+margin-bottom: 20px;
+}
+header .shop-cart-open .img{
+    width: 70px;
+    float: left;
+    margin-right: 20px;
+}
+header .shop-cart-open .item h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+header .shop-cart-open .item p{
+    color: gray;
+    font-weight: 600;
+}
+.shop-cart:hover,
+.shop-cart:active{
+    color: red;
+    transform: scale(1.5);
+}
+.item{
+    width: 30%;
+    margin-bottom: 50px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    position: relative;
+}
+.img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 500ms;
+}
+.img:hover{
+    transform: scale(1.05);
+}
+.add-to-cart{
+    position: absolute;
+    right: 10px;
+    bottom: 1px;
+    color: white;
+    background-color: #222;
+}
+footer{
+    text-align: center;
+    margin-top: 100px;
+}
